@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 
-function Test() {
+function HomePage() {
     var [arr, setValues] = useState([
         {
             id: 1,
@@ -35,7 +35,7 @@ function Test() {
     }
     return ( 
         <div>
-            <h2 className="text-center text-3xl font-bold text-red-600">Hello World form another component!</h2>
+            <h2 className="text-center text-3xl font-bold text-red-600">HomePage</h2>
             <div>
                 <p>{likes}</p>
                 <button onClick={increment}>Click me!</button>
@@ -51,4 +51,4 @@ function Test() {
     );
 }
 
-export default Test;
+export default HomePage;

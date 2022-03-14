@@ -1,24 +1,19 @@
 import React from 'react';
 import Test from './components/test'
+import HomePage from './components/home'
+import { Routes, Route } from "react-router-dom";
+
+import Layout from './components/layout'
+
 function App() {
-  const someProd = [
-    {
-      id: 1,
-      product: "Bread"
-    },
-    {
-      id: 2,
-      product: "Milk"
-    },
-    {
-      id: 3,
-      product: "Egg"
-    }
-  ]
   return (
     <div className="App">
-      <h1 className="text-center">Hello World</h1>
-      <Test someProd={someProd}/>
+    <Routes>
+      <Route path='/' element={<Layout />}>
+        <Route index element={<HomePage />}/>
+        <Route path="/test" element={<Test/>}/>
+      </Route>
+    </Routes>
     </div>
   );
 }
