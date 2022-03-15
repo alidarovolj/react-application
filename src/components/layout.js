@@ -1,18 +1,18 @@
-import { Link, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 
 const Layout = () => {
     return (
         <>
-            <header>
+            {/* <header>
                 <Link to="/">Home</Link>
                 <Link to="/test">Test</Link>
-            </header>
+            </header> */}
 
             <div className='container'>
                 <Outlet />
             </div>
 
-            <p>qwerty</p>
+            {/* <p>qwerty</p> */}
         </>
     )
 }
